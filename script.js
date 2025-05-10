@@ -11,14 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Opcional: Oculta el mensaje después de unos segundos
     setTimeout(() => {
         mensaje.style.display = 'none';
-    }, 5000); // Oculta el mensaje después de 5 segundos
+    }, 25000); // Oculta el mensaje después de 25 segundos
 });
 
 function abrirCarta() {
-      // Lógica existente para abrir la carta
-     const mensaje = document.getElementById('mensaje');
+    // Lógica existente para abrir la carta
+    const mensaje = document.getElementById('mensaje');
     if (mensaje) {
         mensaje.style.display = 'none'; // Oculta el mensaje
+    }
+    const mensajeDia = document.getElementById('mensaje-dia');
+    if (mensajeDia) {
+        mensajeDia.remove(); // Elimina el mensaje del DOM
     }
     const cartaAbierta = document.querySelector('.carta-abierta');
     const cartaCerrada = document.querySelector('.carta-cerrada');
