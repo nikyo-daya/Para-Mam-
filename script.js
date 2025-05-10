@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function abrirCarta() {
       // Lógica existente para abrir la carta
-    const mensajeDia = document.getElementById('mensaje-dia');
-    if (mensajeDia) {
-        mensajeDia.remove(); // Elimina el mensaje del DOM
+     const mensaje = document.getElementById('mensaje');
+    if (mensaje) {
+        mensaje.style.display = 'none'; // Oculta el mensaje
     }
     const cartaAbierta = document.querySelector('.carta-abierta');
     const cartaCerrada = document.querySelector('.carta-cerrada');
