@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Opcional: Oculta el mensaje después de unos segundos
     setTimeout(() => {
         mensaje.style.display = 'none';
-    }, 25000); // Oculta el mensaje después de 25 segundos
+    }, 5000); // Oculta el mensaje después de 5 segundos
 });
 
 function abrirCarta() {
